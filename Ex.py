@@ -1,10 +1,6 @@
-import json
 import requests
 
 site = "https://api.npoint.io/2b57052af2060e84dc86"
-
-# Your code goes here
-
 
 # Trying to load JSON into text
 r = requests.get(site)
@@ -20,8 +16,8 @@ for _i in text:
 # convert all elements (except the first one) into number and return it as a list
 def convert_number(my_list):
     new_list = []
-    for i in range(1, len(my_list)):
-        new_list.append(int(my_list[i]))
+    for ii in range(1, len(my_list)):
+        new_list.append(int(my_list[ii]))
     return new_list
 
 
